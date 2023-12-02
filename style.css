@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FAF9F6; /* Set a background color for the whole page */
+    margin: 0;
+}
+.card {
+    justify-content: center;
+    text-align: center;
+    
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    
+    transition: transform 0.8s ease;
+    border-radius: 25px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    background-color: #E5E8E8;
+    /* box-shadow: 10px 10px 90px #f5b7b1b2; */
+    border-color: 2px #E5E8E8;
+}
+
+.card img {
+    width: 80%;
+    height: 65%;
+    margin-top: 0px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border-radius: 10px;
+    transform: scale(1.0);
+    
+    
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #E5E8E8;
+    width: 100%;
+    box-sizing: border-box;
+    transition:  0.3s ease;
+}
+
+.card-content h4 {
+    margin: 0;
+    padding: -20px;
+}
+
+.card-content label {
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card:hover img {
+    transform: scale(1.07);
+}
+
+.card:hover .card-content {
+    background-color: #E5E8E8;
+   /* transition: background-color 0.3s ease;*/
+}
+#button1 {
+    border-radius: 25px;
+    background-color: black;
+    color: #FAF9F6;
+    width: 120PX;
+    height: 50px;
+     
+    
+}
+
+#label1{
+    margin-bottom: 5px;
+}
