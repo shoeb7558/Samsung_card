@@ -1,13 +1,26 @@
 function hoverCard(card) {
-    const label = card.querySelector('label');
-    label.innerHTML = '<button id="button1" onclick="handleButtonClick()">Click Me</button>';
+    gsap.to("#label1", {
+        y: -50,
+        opacity: 0,
+        duration: 0.5,
+    });
+
+    gsap.to("#button1", {
+        y: -90,
+        opacity: 1,
+        duration: 0.5,
+    });
 }
 
 function unhoverCard(card) {
-    const label = card.querySelector('label');
-    label.innerHTML = 'Galaxy Z Flip5 | 256GB | 8GB';
-}
+    gsap.to("#label1", {
+        y: 1,
+        opacity: 1,
+    });
 
-function handleButtonClick() {
-    alert('Button Clicked!');
+    gsap.to("#button1", {
+        y: 50,
+        opacity: 0,
+        duration: 0.5, // Add a duration for the opacity change
+    });
 }
