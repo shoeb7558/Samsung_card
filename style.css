@@ -16,7 +16,7 @@ body {
     overflow: hidden;
     
     transition: transform 0.8s ease;
-    border-radius: 25px;
+    border-radius: 20px;
     padding-top: 0px;
     padding-left: 20px;
     padding-right: 20px;
@@ -37,7 +37,7 @@ body {
     
     
 }
-
+/* 
 .card-content {
     position: absolute;
     bottom: 0;
@@ -47,14 +47,14 @@ body {
     width: 100%;
     box-sizing: border-box;
     transition:  0.3s ease;
-}
+} */
 
-.card-content h4 {
+ h4 {
     margin: 0;
     padding: -20px;
 }
 
-.card-content label {
+label {
     display: block;
     margin-top: 2px;
     margin-bottom: 5px;
@@ -69,7 +69,7 @@ body {
     transform: scale(1.07);
 }
 
-.card:hover .card-content {
+.card:hover {
     background-color: #E5E8E8;
    /* transition: background-color 0.3s ease;*/
 }
@@ -79,10 +79,11 @@ body {
     color: #FAF9F6;
     width: 120PX;
     height: 50px;
+    
      
     
 }
 
 #label1{
-    margin-bottom: 5px;
+    margin-bottom: 100px;
 }
